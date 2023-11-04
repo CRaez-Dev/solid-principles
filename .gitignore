@@ -1,3 +1,6 @@
+# Excluding folders
+apps
+
 # Logs
 logs
 *.log
