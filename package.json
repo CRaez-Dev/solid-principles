@@ -1,0 +1,28 @@
+{
+  "name": "solid-principles",
+  "version": "1.0.0",
+  "description": "Main repository to manage every solid principles projects",
+  "main": "index.js",
+  "scripts": {
+    "clone": "ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRaez-Dev/solid-principles.git"
+  },
+  "keywords": [
+    "SOLID",
+    "NODE",
+    "TYPESCRIPT"
+  ],
+  "author": "Carlos Raez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CRaez-Dev/solid-principles/issues"
+  },
+  "homepage": "https://github.com/CRaez-Dev/solid-principles#readme",
+  "dependencies": {
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  }
+}
