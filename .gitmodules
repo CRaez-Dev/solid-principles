@@ -1,3 +1,0 @@
-[submodule "src/apps"]
-	path = src/apps
-	url = git@github.com:CRaez-Dev/node-typescript-solid.git
