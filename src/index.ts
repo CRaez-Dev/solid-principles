@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readdirSync } from 'node:fs';
 import { simpleGit, SimpleGit } from 'simple-git'
 import { PROJECTS } from "./constants";
 
-const BASE_URL: string = 'https://github.com/CRaez-Dev/';
+const BASE_URL: string = 'git@github.com:CRaez-Dev/';
 const APP_DIR: string = './apps';
 
 (async (): Promise<void> => {
@@ -16,7 +16,7 @@ const APP_DIR: string = './apps';
         await Promise.all(PROJECTS.map(async (item) => {
             if (!REPO_FOLDERS.some((repo) => repo === item)) {
                 console.log(`🚀 Cloning -> ${item}`)
-                await git.clone(`${BASE_URL}${item}`, `./apps/${item}`)
+                await git.clone(`${BASE_URL}${item}.git`, `./apps/${item}`)
                 console.log('🚀 Cloning -> succeded')
             }
         }))
